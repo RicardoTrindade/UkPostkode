@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-group 'com.ricardotrindade'
+group 'com.ricardo-trindade'
 version '0.0.1'
 
 repositories {
@@ -18,7 +18,7 @@ dependencies {
 publishing {
     publications {
         maven(MavenPublication) {
-            group 'com.ricardotrindade'
+            group 'com.ricardo-trindade'
             version '0.0.1'
 
             from components.java
