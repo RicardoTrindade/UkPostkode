@@ -25,3 +25,6 @@ With gradle
   postcode.unit = "QJ"
 
 ```
+
+# Contributing
+Contributions are more than welcome, the project is still very young so feel free to open a PR!
