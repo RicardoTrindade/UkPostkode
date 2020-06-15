@@ -1,5 +1,17 @@
 package com.ricardotrindade.ukpostkode
 
+/**
+ * Base ukpostcode class, constructor receives a postcode string and parses it
+ * returning the common fields.
+ *
+ * e.g For the postcode N1 5QJ
+ * outcode: N1
+ * incode: 5QJ
+ * area: N
+ * district: 1
+ * sector: 5
+ * unit: QJ
+ */
 class UkPostkode(postcode: String) {
     private val pattern = "^(([A-Z][A-Z]{0,1})([0-9][A-Z0-9]{0,1})) {0,}(([0-9])([A-Z]{2}))$".toRegex()
     var outcode: String
@@ -24,5 +36,8 @@ class UkPostkode(postcode: String) {
         this.unit = unit
     }
 
+    /**
+     * Returns the fully parsed postcode
+     */
     fun full() = "$outcode $incode"
 }
