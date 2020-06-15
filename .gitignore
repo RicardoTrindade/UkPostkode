@@ -11,3 +11,6 @@
 
 .gradle/
 build/
+
+private.key
+creds.txt
